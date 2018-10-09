@@ -1,0 +1,17 @@
+C:\Users\Jorge Puerta\source\repos\EmbedApiPowerBI\EmbedApiPowerBI\bin\Release\EmbedApiPowerBI.dll.config
+C:\Users\Jorge Puerta\source\repos\EmbedApiPowerBI\EmbedApiPowerBI\bin\Release\EmbedApiPowerBI.dll
+C:\Users\Jorge Puerta\source\repos\EmbedApiPowerBI\EmbedApiPowerBI\bin\Release\EmbedApiPowerBI.pdb
+C:\Users\Jorge Puerta\source\repos\EmbedApiPowerBI\EmbedApiPowerBI\bin\Release\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\Jorge Puerta\source\repos\EmbedApiPowerBI\EmbedApiPowerBI\bin\Release\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+C:\Users\Jorge Puerta\source\repos\EmbedApiPowerBI\EmbedApiPowerBI\bin\Release\Microsoft.PowerBI.Api.dll
+C:\Users\Jorge Puerta\source\repos\EmbedApiPowerBI\EmbedApiPowerBI\bin\Release\Microsoft.Rest.ClientRuntime.dll
+C:\Users\Jorge Puerta\source\repos\EmbedApiPowerBI\EmbedApiPowerBI\bin\Release\Newtonsoft.Json.dll
+C:\Users\Jorge Puerta\source\repos\EmbedApiPowerBI\EmbedApiPowerBI\bin\Release\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+C:\Users\Jorge Puerta\source\repos\EmbedApiPowerBI\EmbedApiPowerBI\bin\Release\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.xml
+C:\Users\Jorge Puerta\source\repos\EmbedApiPowerBI\EmbedApiPowerBI\bin\Release\Microsoft.Rest.ClientRuntime.xml
+C:\Users\Jorge Puerta\source\repos\EmbedApiPowerBI\EmbedApiPowerBI\bin\Release\Newtonsoft.Json.xml
+C:\Users\Jorge Puerta\source\repos\EmbedApiPowerBI\EmbedApiPowerBI\obj\Release\EmbedApiPowerBI.csprojAssemblyReference.cache
+C:\Users\Jorge Puerta\source\repos\EmbedApiPowerBI\EmbedApiPowerBI\obj\Release\EmbedApiPowerBI.csproj.CoreCompileInputs.cache
+C:\Users\Jorge Puerta\source\repos\EmbedApiPowerBI\EmbedApiPowerBI\obj\Release\EmbedApiPowerBI.csproj.CopyComplete
+C:\Users\Jorge Puerta\source\repos\EmbedApiPowerBI\EmbedApiPowerBI\obj\Release\EmbedApiPowerBI.dll
+C:\Users\Jorge Puerta\source\repos\EmbedApiPowerBI\EmbedApiPowerBI\obj\Release\EmbedApiPowerBI.pdb
