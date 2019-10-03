@@ -16,3 +16,20 @@ C:\Users\Jorge Puerta\source\repos\EmbedApiPowerBI\TestApp\obj\Debug\TestApp.exe
 C:\Users\Jorge Puerta\source\repos\EmbedApiPowerBI\TestApp\obj\Debug\TestApp.pdb
 C:\Users\Jorge Puerta\source\repos\EmbedApiPowerBI\TestApp\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Jorge Puerta\source\repos\EmbedApiPowerBI\TestApp\bin\Debug\Newtonsoft.Json.xml
+D:\EmbedApiPowerBI\TestApp\bin\Debug\TestApp.exe.config
+D:\EmbedApiPowerBI\TestApp\bin\Debug\TestApp.exe
+D:\EmbedApiPowerBI\TestApp\bin\Debug\TestApp.pdb
+D:\EmbedApiPowerBI\TestApp\bin\Debug\EmbedApiPowerBI.dll
+D:\EmbedApiPowerBI\TestApp\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+D:\EmbedApiPowerBI\TestApp\bin\Debug\Microsoft.Rest.ClientRuntime.dll
+D:\EmbedApiPowerBI\TestApp\bin\Debug\Newtonsoft.Json.dll
+D:\EmbedApiPowerBI\TestApp\bin\Debug\EmbedApiPowerBI.pdb
+D:\EmbedApiPowerBI\TestApp\bin\Debug\EmbedApiPowerBI.dll.config
+D:\EmbedApiPowerBI\TestApp\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+D:\EmbedApiPowerBI\TestApp\bin\Debug\Microsoft.Rest.ClientRuntime.xml
+D:\EmbedApiPowerBI\TestApp\bin\Debug\Newtonsoft.Json.xml
+D:\EmbedApiPowerBI\TestApp\obj\Debug\TestApp.csprojAssemblyReference.cache
+D:\EmbedApiPowerBI\TestApp\obj\Debug\TestApp.csproj.CoreCompileInputs.cache
+D:\EmbedApiPowerBI\TestApp\obj\Debug\TestApp.csproj.CopyComplete
+D:\EmbedApiPowerBI\TestApp\obj\Debug\TestApp.exe
+D:\EmbedApiPowerBI\TestApp\obj\Debug\TestApp.pdb

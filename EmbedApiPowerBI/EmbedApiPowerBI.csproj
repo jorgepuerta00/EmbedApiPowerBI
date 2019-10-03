@@ -61,7 +61,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClsEmbedPowerBI.cs" />
+    <Compile Include="TokenEmbedPowerBI.cs" />
+    <Compile Include="Token.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Secret.cs" />
     <Compile Include="TokenRequest.cs" />

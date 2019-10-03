@@ -15,3 +15,19 @@ C:\Users\Jorge Puerta\source\repos\EmbedApiPowerBI\EmbedApiPowerBI\obj\Debug\Emb
 C:\Users\Jorge Puerta\source\repos\EmbedApiPowerBI\EmbedApiPowerBI\obj\Debug\EmbedApiPowerBI.csprojAssemblyReference.cache
 C:\Users\Jorge Puerta\source\repos\EmbedApiPowerBI\EmbedApiPowerBI\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Jorge Puerta\source\repos\EmbedApiPowerBI\EmbedApiPowerBI\bin\Debug\Newtonsoft.Json.xml
+D:\EmbedApiPowerBI\EmbedApiPowerBI\bin\Debug\EmbedApiPowerBI.dll.config
+D:\EmbedApiPowerBI\EmbedApiPowerBI\bin\Debug\EmbedApiPowerBI.dll
+D:\EmbedApiPowerBI\EmbedApiPowerBI\bin\Debug\EmbedApiPowerBI.pdb
+D:\EmbedApiPowerBI\EmbedApiPowerBI\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+D:\EmbedApiPowerBI\EmbedApiPowerBI\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+D:\EmbedApiPowerBI\EmbedApiPowerBI\bin\Debug\Microsoft.PowerBI.Api.dll
+D:\EmbedApiPowerBI\EmbedApiPowerBI\bin\Debug\Microsoft.Rest.ClientRuntime.dll
+D:\EmbedApiPowerBI\EmbedApiPowerBI\bin\Debug\Newtonsoft.Json.dll
+D:\EmbedApiPowerBI\EmbedApiPowerBI\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+D:\EmbedApiPowerBI\EmbedApiPowerBI\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.xml
+D:\EmbedApiPowerBI\EmbedApiPowerBI\bin\Debug\Microsoft.Rest.ClientRuntime.xml
+D:\EmbedApiPowerBI\EmbedApiPowerBI\bin\Debug\Newtonsoft.Json.xml
+D:\EmbedApiPowerBI\EmbedApiPowerBI\obj\Debug\EmbedApiPowerBI.csproj.CoreCompileInputs.cache
+D:\EmbedApiPowerBI\EmbedApiPowerBI\obj\Debug\EmbedApiPowerBI.csproj.CopyComplete
+D:\EmbedApiPowerBI\EmbedApiPowerBI\obj\Debug\EmbedApiPowerBI.dll
+D:\EmbedApiPowerBI\EmbedApiPowerBI\obj\Debug\EmbedApiPowerBI.pdb

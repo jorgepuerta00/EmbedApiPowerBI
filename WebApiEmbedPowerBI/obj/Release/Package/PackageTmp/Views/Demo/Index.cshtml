@@ -1,0 +1,99 @@
+﻿
+@{
+    ViewBag.Title = "Demo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="https://microsoft.github.io/PowerBI-JavaScript/demo/node_modules/powerbi-client/dist/powerbi.js"></script>
+
+<h2>Portal Power BI Example</h2>
+<p>Example Report</p>
+<div style="height:800px; width:100%;" id="reportContainer1"></div>
+
+<script type="text/javascript">
+
+    window.onload = allLoadReports();
+
+    function allLoadReports() {
+        fetchandLoadReport('add9ab3f-683a-4efc-9100-8e36dccdec90', '4152cd2a-8a70-47ca-b0b4-e17d7cf0d1a9', 'e655e4d3-92ac-48f1-80f4-9eb9efb6a95a', '1');
+    }
+
+    function fetchandLoadReport(paramGroupId, paramReportId, paramDataSetId, paramReportContainer) {
+        $.ajax({
+            type: 'POST',
+            url: 'https://azpowerpixm.azurewebsites.net/api/PowerBI/GetTokenAccess',
+            contentType: "application/json; charset=utf-8",
+            dataType: 'json',
+            headers: {
+                "accept": "application/json",
+                "content-type": "application/x-www-form-urlencoded"
+            },
+            data: { GroupId: paramGroupId, ReportId: paramReportId, DatasetId: paramDataSetId, AccessLevel: 'View' },
+            success: function (token) {
+                var models = window['powerbi-client'].models;
+                var permissions = models.Permissions.All;
+                var viewModel = models.ViewMode.View;
+                var embedConfiguration = {
+                    type: 'report',
+                    tokenType: models.TokenType.Embed,
+                    id: paramReportId,
+                    embedUrl: 'https://app.powerbi.com/reportEmbed?reportId=' + paramReportId + '&groupId=' + paramGroupId,
+                    accessToken: token,
+                    permissions: permissions,
+                    viewMode: viewModel,
+                    settings: {
+                        filterPaneEnabled: false,
+                        navContentPaneEnabled: true
+                    }
+                };
+
+                var $reportContainer = $('#reportContainer' + paramReportContainer);
+
+                if (detectOS() || detectmob()) {
+                    embedConfiguration.settings = { layoutType: models.LayoutType.MobilePortrait };
+                }
+
+                var report = powerbi.embed($reportContainer.get(0), embedConfiguration);
+
+                report.off("loaded");
+                report.on("loaded", function () {
+                    console.log("Loaded");
+                });
+                report.on("error", function (event) {
+                    console.log(event.detail);
+                    alert(event.detail.detailedMessage);
+                    report.off("error");
+                });
+                report.off("saved");
+                report.on("saved", function (event) {
+                    Log.log(event.detail);
+                    if (event.detail.saveAs) {
+                        console.log('In order to interact with the new report, create a new token and load the new report')
+                    }
+                });
+            },
+            error: function (result) {
+                alert("Error generando token.");
+                return;
+            }
+        });
+    }
+
+    function detectmob() {
+        if (window.innerWidth <= 800 && window.innerHeight <= 600) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    function detectOS() {
+        if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+</script>

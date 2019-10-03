@@ -1,6 +1,9 @@
 ﻿using EmbedPowerBI;
 using System.Web.Http;
 using Commons.DTO;
+using System.Net;
+using System.Net.Http;
+using System;
 
 namespace WebApiEmbedPowerBI.Controllers
 {
@@ -13,19 +16,29 @@ namespace WebApiEmbedPowerBI.Controllers
         /// <returns>A JSON with result operation.</returns>
         [Route("GetTokenAccess")]
         [HttpPost] //Always explicitly state the accepted HTTP method
-        public IHttpActionResult GetTokenAccess([FromBody] TokenRequest Request)
+        public HttpResponseMessage GetTokenAccess([FromBody] TokenRequest request)
         {
-            ClsEmbedPowerBI EmbedPowerBIApi = new ClsEmbedPowerBI()
+            HttpResponseMessage response;
+            try
             {
-                AccessLevel = Request.AccessLevel,
-                GroupId = Request.GroupId,
-                ReportId = Request.ReportId,
-                DatasetId = Request.DatasetId
-            };
+                TokenEmbedPowerBI EmbedPowerBIApi = new TokenEmbedPowerBI()
+                {
+                    GroupId = request.GroupId,
+                    ReportId = request.ReportId,
+                    DatasetId = request.DatasetId,
+                    AccessLevel = request.AccessLevel
+                };
 
-            var TokenAccess = EmbedPowerBIApi.GetTokenAccess();
+                var result = EmbedPowerBIApi.GetTokenAccess();
 
-            return Ok(TokenAccess);
+                response = Request.CreateResponse(HttpStatusCode.OK, result);
+            }
+            catch (Exception ex)
+            {
+                HttpError myCustomError = new HttpError(ex.Message) { { "IsSuccess", false } };
+                return Request.CreateErrorResponse(HttpStatusCode.OK, myCustomError);
+            }
+            return response;
         }
     }
 }
